@@ -47,5 +47,5 @@ skill-name/
 
 ## 相關專案
 
-- [kc_tradfri_mcp](https://github.com/KerberosClaw/kc_tradfri_mcp) — IKEA TRADFRI MCP Server，AI 自然語言智慧家居控制
-- [kc_openclaw_local_llm](https://github.com/KerberosClaw/kc_openclaw_local_llm) — OpenClaw + 本地 LLM 指南，13 個模型實測
+- [kc_tradfri_mcp](https://github.com/KerberosClaw/kc_tradfri_mcp) — 「把客廳的燈打開」— TRADFRI MCP
+- [kc_openclaw_local_llm](https://github.com/KerberosClaw/kc_openclaw_local_llm) — OpenClaw + 本地 LLM：哪些真的能用

@@ -47,5 +47,5 @@ skill-name/
 
 ## Related Projects
 
-- [kc_tradfri_mcp](https://github.com/KerberosClaw/kc_tradfri_mcp) — IKEA TRADFRI MCP Server for AI smart home control
-- [kc_openclaw_local_llm](https://github.com/KerberosClaw/kc_openclaw_local_llm) — OpenClaw + local LLM guide with 13 models tested
+- [kc_tradfri_mcp](https://github.com/KerberosClaw/kc_tradfri_mcp) — "Turn on the living room lights" — TRADFRI MCP
+- [kc_openclaw_local_llm](https://github.com/KerberosClaw/kc_openclaw_local_llm) — OpenClaw + Local LLM: What Actually Works
