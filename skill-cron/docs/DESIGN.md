@@ -90,7 +90,7 @@ skill-cron 在系統 crontab 中用標記區塊管理自己的 entries：
 
 | Skill | headless-prompt | 建議排程 |
 |-------|----------------|---------|
-| [banini](../banini-tracker/) | Threads 爬蟲 + 反指標分析 | 盤中 `7,37 9-12 * * 1-5`、盤後 `3 23 * * *` |
+| [banini](../banini/) | Threads 爬蟲 + 反指標分析 | 盤中 `7,37 9-12 * * 1-5`、盤後 `3 23 * * *` |
 
 其他 skill 作者可以在 SKILL.md frontmatter 加入 `headless-prompt` 來支援排程。
 

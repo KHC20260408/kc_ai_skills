@@ -9,6 +9,9 @@
 
 set -euo pipefail
 
+# Ensure PATH includes common binary locations (crontab has minimal PATH)
+export PATH="$HOME/.local/bin:/usr/local/bin:/opt/homebrew/bin:$PATH"
+
 PROMPT="$1"
 JOB_ID="${2:-unknown}"
 CONFIG_FILE="$HOME/.claude/configs/skill-cron.json"
@@ -21,7 +24,7 @@ mkdir -p "$LOG_DIR"
 echo "[${TIMESTAMP}] Running job: ${JOB_ID}" | tee "$LOG_FILE"
 
 # Run claude in headless mode
-OUTPUT=$(claude -p "$PROMPT" --allowedTools "Bash,Read,Glob,Grep" 2>>"$LOG_FILE") || {
+OUTPUT=$(claude --dangerously-skip-permissions -p "$PROMPT" --allowedTools "Bash,Read,Glob,Grep" 2>>"$LOG_FILE") || {
     echo "[error] claude -p failed" | tee -a "$LOG_FILE"
     exit 1
 }
