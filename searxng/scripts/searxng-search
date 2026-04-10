@@ -1,2 +1,0 @@
-#!/bin/bash
-SEARXNG_URL=http://PC_LAN_IP:8080 uv run ~/.openclaw/workspace/skills/searxng/scripts/searxng.py search "$@"
